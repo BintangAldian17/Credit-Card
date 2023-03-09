@@ -4,11 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1 class="underline text-red-700">hallo</h1>
+    <div class="w-full flex max-h-screen relative">
+      <div
+        class="w-1/3 h-screen bg-[url('../dist/images/bg-main-desktop.png')] bg-no-repeat bg-cover flex justify-center items-center flex-col">
+        <div class="absolute left-44 top-32">
+          <div class="text-white text-xl absolute flex flex-col p-7 justify-between w-full h-full">
+            <div>
+              <img src="../dist/images/card-logo.svg" alt="" />
+            </div>
+            <div>
+              <span class="font-primary text-3xl tracking-widest leading-6">9591 6489 6389 101E</span>
+              <div class="flex justify-between text-base mt-5">
+                <span>FELICIA LEIRE</span>
+                <span>09/00</span>
+              </div>
+            </div>
+          </div>
+          <img src="../dist/images/bg-card-front.png" alt="" class="" />
+        </div>
+        <div class="absolute left-72 top-[420px]">
+          <div class="w-full h-full absolute flex justify-end items-center right-12">
+            <span class="text-white font-primary font-medium tracking-wider">0000</span>
+          </div>
+          <img src="../dist/images/bg-card-back.png" alt="" />
+        </div>
+      </div>
+      <div class="w-2/3 h-screen"></div>
+    </div>
     <script src="../script.js"></script>
   </body>
 </html>
