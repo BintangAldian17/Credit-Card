@@ -9,6 +9,8 @@ const displayYear = document.getElementById("card_year")
 const cardCvc = document.getElementById("cvc")
 const displayCvc = document.getElementById("card_cvc")
 const submitButton = document.getElementById("submit_btn")
+const formPage = document.getElementById("form")
+const donePage = document.getElementById("page_done")
 
 
 
@@ -37,12 +39,13 @@ const handleSubmitForm = (e) => {
     e.preventDefault();
     if (
         displayName.value &&
-        displayNum.value.length == 16 &&
+        displayNum.value &&
         displayMonth.value &&
-        displayYear.value.length == 2 &&
-        displayCvc.value.length == 2
+        displayYear.value.length &&
+        displayCvc.value
     ) {
-        alert("congrats bradsss")
+        donePage.classList.remove("hidden")
+        formPage.classList.add("hidden")
     }
 }
 
