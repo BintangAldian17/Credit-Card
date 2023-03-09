@@ -23,10 +23,14 @@
               <img src="../dist/images/card-logo.svg" alt="" />
             </div>
             <div>
-              <span class="font-primary text-3xl tracking-widest leading-6">9591 6489 6389 101E</span>
+              <span class="font-primary text-3xl tracking-widest leading-6" id="number">9591 6489 6389 101E</span>
               <div class="flex justify-between text-base mt-5">
-                <span>FELICIA LEIRE</span>
-                <span>09/00</span>
+                <span id="card-name">FELICIA LEIRE</span>
+                <div>
+                  <span id="date-card">09</span>
+                  /
+                  <span id="year-card">00</span>
+                </div>
               </div>
             </div>
           </div>
@@ -34,12 +38,53 @@
         </div>
         <div class="absolute left-72 top-[420px]">
           <div class="w-full h-full absolute flex justify-end items-center right-12">
-            <span class="text-white font-primary font-medium tracking-wider">0000</span>
+            <span class="text-white font-primary font-medium tracking-wider" id="cvc">0000</span>
           </div>
           <img src="../dist/images/bg-card-back.png" alt="" />
         </div>
       </div>
-      <div class="w-2/3 h-screen"></div>
+      <div class="w-2/3 h-screen">
+        <div class="flex w-full h-full justify-center items-center">
+          <form class="w-[350px] flex flex-col gap-y-3 font-primary">
+            <div class="w-full h-full">
+              <h1 class="text-sm font-medium mb-2">CARD HOLDER NAME</h1>
+              <input
+                type="text"
+                class="rounded-lg border border-gray-300 focus:border-violet-600 focus:outline-none w-full h-11 p-4" />
+              <h1 class="text-red-600 text-sm hidden">Wrong format</h1>
+            </div>
+            <div class="w-full h-full mt-3">
+              <h1 class="text-sm font-medium mb-2">CARD NUMBER</h1>
+              <input
+                type="number"
+                class="rounded-lg border border-gray-300 focus:border-violet-600 focus:outline-none w-full h-11 p-4" />
+            </div>
+            <div class="w-full flex items-center justify-center gap-x-3 mb-6">
+              <div class="w-1/2">
+                <h1 class="font-primary text-sm font-medium mb-2">EXP. DATE (MM/YY)</h1>
+                <div class="w-full flex gap-x-2">
+                  <input
+                    type="number"
+                    class="rounded-lg border border-gray-300 focus:border-violet-600 focus:outline-none w-full h-11 p-4" />
+                  <input
+                    type="number"
+                    class="rounded-lg border border-gray-300 focus:border-violet-600 focus:outline-none w-full h-11 p-4" />
+                </div>
+              </div>
+              <div class="w-1/2">
+                <h1 class="font-primary text-sm font-medium mb-2">CVC</h1>
+                <input
+                  type="number"
+                  class="rounded-lg border border-gray-300 focus:border-violet-600 focus:outline-none w-full h-11 p-4"
+                  required
+                  minlength="3"
+                  maxlength="3" />
+              </div>
+            </div>
+            <button class="w-full h-11 rounded-lg bg-purple-900 text-white">Confirm</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="../script.js"></script>
   </body>
